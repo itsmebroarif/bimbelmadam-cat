@@ -8,15 +8,21 @@
 	<meta name="description" content="" />
 	<meta name="author" content="" />
 	<title>Data Ujian</title>
+    <link rel="stylesheet" href="https://cdn.datatables.net/1.13.7/css/jquery.dataTables.css" />
 	<link href="https://cdn.jsdelivr.net/npm/simple-datatables@7.1.2/dist/style.min.css" rel="stylesheet" />
 	<link href="css/styles.css" rel="stylesheet" />
 	<script src="https://use.fontawesome.com/releases/v6.3.0/js/all.js" crossorigin="anonymous"></script>
+
 </head>
 
 <body class="sb-nav-fixed">
 	<nav class="sb-topnav navbar navbar-expand navbar-dark bg-primary">
-		<a style="color: white;" id="sidebarToggle" class="navbar-brand ps-2 ms-2 href=" index.html">Bimbel Madam - Home
-		</a>
+		<div class="container">
+			<a class="navbar-brand ps-2 ms-2" href="index.html">Bimbel Madam - Home </a>
+			<button class="btn btn-link btn-sm order-1 order-lg-0 me-5 me-lg-0" id="sidebarToggle" href="#!">
+				<i class="fas fa-bars"></i>
+			</button>
+		</div>
 	</nav>
 	<div id="layoutSidenav">
 		<div id="layoutSidenav_nav">
@@ -26,9 +32,9 @@
 						<div class="sb-sidenav-menu-heading">Menu Aplikasi</div>
 						<a class="nav-link" href="index.html">
 							<div class="sb-nav-link-icon">
-								<i class="fas fa-calendar-alt"></i>
+								<i class="fas fa-home-alt"></i>
 							</div>
-							<b style="color:white;">Jadwal Ujian</b>
+							<b  style="color:white;">Halaman</b>
 						</a>
 						<a class="nav-link" href="jadwal.html">
 							<div class="sb-nav-link-icon">
@@ -40,80 +46,101 @@
 			</nav>
 		</div>
 		<div id="layoutSidenav_content">
-			<main>
-				<div class="container-fluid px-4">
-					<h1 class="mt-4">Halaman Jadwal Ujian</h1>
-					<hr width="140px" />
-					<ol class="breadcrumb mb-4">
-						<li class="breadcrumb-item active">Detail Ujian</li>
-					</ol>
-					<div class="card mb-4">
-						<div class="card-header">
-							<i class="fas fa-table me-1"></i>
-							Link Ujian
-						</div>
-						<div class="card-body">
-							<table id="datatablesSimple">
-								<thead>
-									<tr>
-										<th>Mapel</th>
-										<th>Jadwal</th>
-										<th>Pengawas</th>
-										<th>Pengawas</th>
-									</tr>
-								</thead>
-								<tfoot>
-									<tr>
-										<th>Mapel</th>
-										<th>Jadwal</th>
-										<th>Jam & Hari</th>
-										<th>Pengawas</th>
-									</tr>
-								</tfoot>
-								<tbody>
-									<tr>
-										<td>Bahasa Indonesia</td>
-										<td>Jumat, 30 Februari 2025</td>
-										<td> Hari & Jam</td>
-										<td> Nama Pengawas</td>
-									</tr>
-									<tr>
-										<td>Bahasa Inggris</td>
-										<td>Jumat, 30 Februari 2025</td>
-										<td> Hari & Jam</td>
-										<td> Nama Pengawas</td>
-									</tr>
-									<tr>
-										<td>Matematika</td>
-										<td>Jumat, 30 Februari 2025</td>
-										<td> Hari & Jam</td>
-										<td> Nama Pengawas</td>
-									</tr>
-									<tr>
-										<td>Psikotes</td>
-										<td>Jumat, 30 Februari 2025</td>
-										<td> Hari & Jam</td>
-										<td> Nama Pengawas</td>
-									</tr>
-									<tr>
-										<td>Prakarya</td>
-										<td>Jumat, 30 Februari 2025</td>
-										<td> Hari & Jam</td>
-										<td> Nama Pengawas</td>
-									</tr>
-								</tbody>
-							</table>
-						</div>
-					</div>
-					<center>
-						<div class="container mb-4 mt-4">
-							<a href="jadwal.html" class="btn btn-outline-primary">
-								Klik Untuk Ujian
-							</a>
-						</div>
-					</center>
-				</div>
-			</main>
+                <main>
+                    <div class="container mt-4">
+                        <h1 class="display-4 mt-4 mb-4">Selamat Datang Teman - Teman Semua</h1>
+                        <div class="row" style="color: white;">
+                            <div class="col-md-4 mt-2">
+                              <div class="card bg-primary">
+                                <div class="card-body">
+                                  <h5 class="card-title">Clock</h5>
+                                  <!-- Tempat untuk menampilkan jam -->
+                                  <hr>
+                                  <h1 id="clock"></h1>
+                                </div>
+                              </div>
+                            </div>
+                            <div class="col-md-4 mt-2">
+                              <div class="card bg-secondary">
+                                <div class="card-body">
+                                  <h5 class="card-title">Calendar</h5>
+                                  <!-- Tempat untuk menampilkan kalender -->
+                                  <hr>
+                                  <h1 id="calendar"></h1>
+                                </div>
+                              </div>
+                            </div>
+                            <div class="col-md-4 mt-2">
+                              <div class="card" >
+                                <div class="card-body bg-success" style="border-radius: 5px;">
+                                  <h5 class="card-title">Notes</h5>
+                                  <!-- Tempat untuk menampilkan kalender -->
+                                  <hr>
+                                  <p id="notes"></p>
+                                </div>
+                              </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="container px-4">
+                        <h1 class="mt-4">Halaman Jadwal Ujian</h1>
+                        <hr width="140px" />
+                        <ol class="breadcrumb mb-4">
+                            <li class="breadcrumb-item active">Detail Ujian</li>
+                        </ol>
+                        <div class="card mb-4">
+                            <div class="card-header">
+                                <i class="fas fa-table me-1"></i>
+                                Link Ujian
+                            </div>
+                            <div class="card-body">
+                                <table id="datatablesSimple">
+                                    <thead>
+                                        <tr><b>
+                                            <th>Mapel</th>
+                                            <th>Tanggal</th>
+                                            <th>Waktu Pengerjaan</th>
+                                            <th>Jumlah Soal</th>
+                                            <th>Pengawas</th>
+                                        </tr></b>
+                                    </thead>
+                                    
+                                    <tbody>
+                                        <tr>
+                                            <td>Tes Wawasan Kebangsaan</td>
+                                            <td>Senin, 15 Januari 2024</td>
+                                            <td> 90 Menit</td>
+                                            <td> 50 Soal</td>
+                                            <td>Kak maya</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Pengetahuan Umum </td>
+                                            <td>Senin, 15 Januari 2024</td>
+                                            <td> 35 Menit</td>
+                                            <td> 25 Soal</td>
+                                            <td> Kak vero</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Bahasa Indonesia </td>
+                                            <td>Senin, 15 Januari 2024</td>
+                                            <td> 60 Menit</td>
+                                            <td> 20 Soal</td>
+                                            <td> Kak vero</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                        <center>
+                            <div class="container mb-4 mt-4">
+                                <a href="jadwal.html" class="btn btn-outline-primary">
+                                    Klik Untuk Ujian
+                                </a>
+                            </div>
+                        </center>
+                    </div>
+                </main> 
+            
 			<footer class="py-4 bg-light mt-auto">
 				<div class="container-fluid px-4">
 					<div class="d-flex align-items-center justify-content-between small">
@@ -124,13 +151,16 @@
 			</footer>
 		</div>
 	</div>
+
 	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
 		crossorigin="anonymous"></script>
 	<script src="js/scripts.js"></script>
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.8.0/Chart.min.js" crossorigin="anonymous"></script>
 	<script src="https://cdn.jsdelivr.net/npm/simple-datatables@7.1.2/dist/umd/simple-datatables.min.js"
 		crossorigin="anonymous"></script>
 	<script src="js/datatables-simple-demo.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/sweetalert/2.1.2/sweetalert.min.js" integrity="sha512-AA1Bzp5Q0K1KanKKmvN/4d3IRKVlv9PYgwFPvm32nPO6QS8yH1HO7LbgB1pgiOxPtfeg5zEn2ba64MUcqJx6CA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+
 </body>
 
 </html>

@@ -1,122 +1,187 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-bs-theme="dark">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    <meta name="description" content="" />
+    <meta name="author" content="" />
+    <link href="
+      https://cdn.jsdelivr.net/npm/sweetalert2@11.10.2/dist/sweetalert2.min.css
+      " rel="stylesheet">
 
-<head>
-  <meta charset="utf-8" />
-  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
-  <title>Jadwal</title>
-  <link href="https://cdn.jsdelivr.net/npm/simple-datatables@7.1.2/dist/style.min.css" rel="stylesheet" />
-  <link href="css/styles.css" rel="stylesheet" />
-  <script src="https://use.fontawesome.com/releases/v6.3.0/js/all.js" crossorigin="anonymous"></script>
-</head>
+    <title>Jadwal</title>
 
-<body class="sb-nav-fixed">
-  <nav class="sb-topnav navbar navbar-expand navbar-dark bg-primary">
-    <a style="color: white;" id="sidebarToggle" class="navbar-brand ps-2 ms-2 href=" index.html">Bimbel Madam - Detail
-    </a>
-  </nav>
-  <div id="layoutSidenav">
-    <div id="layoutSidenav_nav">
-      <nav class="sb-sidenav accordion sb-sidenav-dark" id="sidenavAccordion">
-        <div class="sb-sidenav-menu">
-          <div class="nav">
-            <div class="sb-sidenav-menu-heading">Menu Aplikasi</div>
-            <a class="nav-link" href="index.html">
-              <div class="sb-nav-link-icon">
-                <i class="fas fa-calendar-alt"></i>
-              </div>
-              Jadwal Ujian
-            </a>
-            <a class="nav-link" href="jadwal.html">
-              <div class="sb-nav-link-icon">
-                <i class="fas fa-tachometer-alt"></i>
-              </div>
-              <b style="color: white;">Link Ujian</b>
-            </a>
-          </div>
-      </nav>
-    </div>
-    <div id="layoutSidenav_content">
-      <main>
-        <div class="container-fluid px-4">
-          <h1 class="mt-4">Bagian Pengambilan Link Soal</h1>
-          <hr width="140px" />
-          <h3>Ketentuan Ujian</h3>
-          <ol class="breadcrumb mb-4">
-            <li class="breadcrumb-item active">Silahkan ambil link ujian dibawah ini</li>
-            <li class="breadcrumb-item">Silahkan Beri tahu pengawas jika ujiannya sudah selesai</li>
-          </ol>
-          <div class="card mb-4">
-            <div class="card-header">
-              <i class="fas fa-table me-1"></i>
-              Jadwal Ujian
-            </div>
-            <div class="card-body">
-              <table id="datatablesSimple">
-                <thead>
-                  <tr>
-                    <th>Mapel</th>
-                    <th>Jadwal</th>
-                    <th>Link</th>
-                  </tr>
-                </thead>
-                <tfoot>
-                  <tr>
-                    <th>Mapel</th>
-                    <th>Jadwal</th>
-                    <th>Link</th>
-                  </tr>
-                </tfoot>
-                <tbody>
-                  <tr>
-                    <td>Bahasa Indonesia</td>
-                    <td>Jumat, 30 Februari 2025</td>
-                    <td> <a class="btn btn-primary" href="pages/mapel_1/quiz.html">Klik Disini</a></td>
-                  </tr>
-                  <tr>
-                    <td>Bahasa inggris</td>
-                    <td>Jumat, 30 Februari 2025</td>
-                    <td> <a class="btn btn-primary" href="pages/mapel_2/quiz.html">Klik Disini </a></td>
-                  </tr>
-                  <tr>
-                    <td>Matematika</td>
-                    <td>Jumat, 31 Februari 2025</td>
-                    <td> <a class="btn btn-danger" href="error/404.html">Belum Bisa Diakses</a></td>
-                  </tr>
-                  <tr>
-                    <td>Psikotes</td>
-                    <td>Jumat, 31 Februari 2025</td>
-                    <td> <a class="btn btn-danger" href="error/404.html">Belum Bisa Diakses</a></td>
-                  </tr>
-                  <tr>
-                    <td>Prakarya</td>
-                    <td>Jumat, 31 Februari 2025</td>
-                    <td> <a class="btn btn-danger" href="error/404.html">Belum Bisa Diakses</a></td>
-                  </tr>
-                </tbody>
-              </table>
-            </div>
-          </div>
+    <style>
+      
+    </style>
+
+    <link
+      href="https://cdn.jsdelivr.net/npm/simple-datatables@7.1.2/dist/style.min.css"
+      rel="stylesheet"
+    />
+    <link href="css/styles.css" rel="stylesheet" />
+    <script
+      src="https://use.fontawesome.com/releases/v6.3.0/js/all.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body class="sb-nav-fixed">
+    <nav class="sb-topnav navbar navbar-expand navbar-dark bg-primary">
+        <div class="container">
+            <a class="navbar-brand ps-2 ms-2 href="index.html">Bimbel Madam - Detail </a>
+            <button
+            class="btn btn-link btn-sm order-1 order-lg-0 me-3 me-lg-0"
+            id="sidebarToggle"
+            href="#!"
+        >
+            <i class="fas fa-bars"></i>
+        </button>
         </div>
-      </main>
-      <footer class="py-4 bg-light mt-auto">
-        <div class="container-fluid px-4">
-          <div class="d-flex align-items-center justify-content-between small">
-            <div class="text-muted">Copyright &copy; ARCA 2024</div>
-
+</nav>
+    <div id="layoutSidenav">
+      <div id="layoutSidenav_nav">
+        <nav class="sb-sidenav accordion sb-sidenav-dark" id="sidenavAccordion">
+          <div class="sb-sidenav-menu">
+            <div class="nav">
+              <div class="sb-sidenav-menu-heading">Menu Aplikasi</div>
+              <a class="nav-link" href="index.html">
+                <div class="sb-nav-link-icon">
+                  <i class="fas fa-home-alt"></i>
+                </div>
+                Halaman
+              </a>
+              <a class="nav-link" href="jadwal.html">
+                <div class="sb-nav-link-icon">
+                  <i class="fas fa-tachometer-alt"></i>
+                </div>
+                <b style="color: white;">Link Ujian</b>
+              </a>
           </div>
-        </div>
-      </footer>
-    </div>
-  </div>
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
-    crossorigin="anonymous"></script>
-  <script src="js/scripts.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.8.0/Chart.min.js" crossorigin="anonymous"></script>
-  <script src="https://cdn.jsdelivr.net/npm/simple-datatables@7.1.2/dist/umd/simple-datatables.min.js"
-    crossorigin="anonymous"></script>
-  <script src="js/datatables-simple-demo.js"></script>
-</body>
+        </nav>
+      </div>
+      <div id="layoutSidenav_content">
+        <main>
+          <div class="container-fluid px-4">
+            <h1 class="mt-4">Bagian Pengambilan Link Soal</h1>
+            <hr width="140px" />
+            <h3>Ketentuan Ujian</h3>
+            <ol class="breadcrumb mb-4">
+              <li class="breadcrumb-item active">
+                Silahkan ambil link ujian dibawah ini
+              </li>
+              <li class="breadcrumb-item">
+                Silahkan Beri tahu pengawas jika ujiannya sudah selesai
+              </li>
+            </ol>
+            <div class="card mb-4">
+              <div class="card-header">
+                <i class="fas fa-table me-1"></i>
+                Jadwal Ujian
+              </div>
+              <div class="card-body">
+                <table id="datatablesSimple" class="table">
+                  <thead>
+                    <tr>
+                      <th>Mapel</th>
+                      <th>Jadwal</th>
+                      <th>Hari</th>
+                      <th>Waktu Pengerjaan</th>
+                      <th>Link</th>
+                    </tr>
+                  </thead>
+                  <tfoot>
+                    <tr>
+                      <th>Mapel</th>
+                      <th>Jadwal</th>
+                      <th>Hari</th>
+                      <th>Waktu Pengerjaan</th>
+                      <th>Link</th>
+                    </tr>
+                  </tfoot>
+                  <tbody>
+                    <tr>
+                      <td>Tes Wawasan Kebangsaan</td>
+                      <td>15 Januari 2024</td>
+                      <td>Senin</td>
+                      <td>90 Menit</td>
+                      <td>
+                        <a
+                          onclick="Swal.fire({title: 'Tunggu Sebentar!', text: 'Sedang Mengambil Data Dari Server!', icon: 'success', });"
+                          class="btn btn-primary"
+                          href="db_mapel/twk/quiz.html"
+                          >Klik Disini</a
+                        >
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>Pengetahuan Umum</td>
+                      <td>15 Januari 2024</td>
+                      <td>Senin</td>
+                      <td>35 Menit</td>
+                      <td>
+                        <a
+                          onclick="Swal.fire({title: 'Tunggu Sebentar!', text: 'Sedang Mengambil Data Dari Server!', icon: 'success', });"
+                          class="btn btn-primary"
+                          href="db_mapel/pu/quiz.html"
+                          >Klik Disini</a
+                        >
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>Bahasa Indonesia</td>
+                      <td>15 Januari 2024</td>
+                      <td>Senin</td>
+                      <td>60 Menit</td>
+                      <td>
+                        <a
+                          onclick="Swal.fire({title: 'Tunggu Sebentar!', text: 'Sedang Mengambil Data Dari Server!', icon: 'success', });"
+                          class="btn btn-primary"
+                          href="db_mapel/bindo/quiz.html"
+                          >Klik Disini</a
+                        >
+                      </td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+            </div>
+          </div>
+        </main>
+        
+        <footer class="py-4 bg-light mt-auto">
+          <div class="container-fluid px-4">
+            <div
+              class="d-flex align-items-center justify-content-between small"
+            >
+              <div class="text-muted">Copyright &copy; ARCA 2024</div>
 
+            </div>
+          </div>
+        </footer>
+      </div>
+    </div>
+    <script src="
+        https://cdn.jsdelivr.net/npm/sweetalert2@11.10.2/dist/sweetalert2.all.min.js
+        "></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
+      crossorigin="anonymous"
+    ></script>
+    <script src="js/scripts.js"></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.8.0/Chart.min.js"
+      crossorigin="anonymous"
+    ></script>
+    <script src="assets/demo/chart-area-demo.js"></script>
+    <script src="assets/demo/chart-bar-demo.js"></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/simple-datatables@7.1.2/dist/umd/simple-datatables.min.js"
+      crossorigin="anonymous"
+    ></script>
+    <script src="js/datatables-simple-demo.js"></script>
+  </body>
 </html>
