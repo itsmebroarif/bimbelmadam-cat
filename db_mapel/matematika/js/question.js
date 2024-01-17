@@ -18,9 +18,9 @@ const quiz = [
       q: "	Bentuk sederhana dari (3<sup>2</sup>xy<sup>3</sup>/3<sup>3</sup>x<sup>-1</sup>y<sup>2</sup>)<sup>-2</sup> adalah...",
       options: [
         "-9/xy<sup>2</sup> ",
-        "9/x<sup>4</sup>y<sup>2</sup> )",
-        "-x<sup>4</sup>y<sup>2</sup>)/9",
-        "x^<sup>2</sup>y/9",
+        "9/x<sup>4</sup>y<sup>2</sup> ",
+        "-x<sup>4</sup>y<sup>2</sup>/9",
+        "x<sup>2</sup>y/9",
         "9/xy<sup>2</sup> ",
       ],
   
@@ -210,7 +210,7 @@ const quiz = [
     },
     // Nomer 22
     {
-      q: "Nilai dari lim(x→∞)⁡√(2xsup>2</sup>+5x+6)-√(2xsup>2</sup>+2x-1)=",
+      q: "Nilai dari lim(x→∞)⁡√(2x<sup>2</sup>+5x+6)-√2x<sup>2</sup>+2x-1)=",
       options: [
         "2√2",
         "3√2",
@@ -254,7 +254,7 @@ const quiz = [
         "3x<sup>6</sup>-2x<sup>4</sup>-2x<sup>2</sup>+C",
         "2x<sup>6</sup>-4/3 x<sup>4</sup>-2x<sup>2</sup>+C",
         "2x<sup>6</sup>-2x<sup>4</sup>-2x<sup>2</sup>+C",
-        "2x^<sup>6</sup>-2x<sup>4</sup>-x<sup>2</sup>+C",
+        "2x<sup>6</sup>-2x<sup>4</sup>-x<sup>2</sup>+C",
         "2x<sup>6</sup>-2x<sup>3</sup>-x<sup>2</sup>+C",
       ],
   
