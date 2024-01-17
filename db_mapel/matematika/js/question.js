@@ -2,7 +2,7 @@
 const quiz = [
   // Nomer 1
   {
-    q: "Jika 8<sup>(2x+1)</sup>=32sup>(2x+1)</sup>, maka berapakah nilai x yang memenuhi adalah",
+    q: "Jika 8<sup>(2x+1)</sup>=32<sup>(2x+1)</sup>, maka berapakah nilai x yang memenuhi adalah",
     options: [
       "1/2",
       "-1/2",
