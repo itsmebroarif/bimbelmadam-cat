@@ -10,7 +10,7 @@ const quiz = [
       "d. Demokrasi Pancasila",
       "e. Bhineka tunggal ika",
     ],
-    answer: 3,
+    answer: 2,
   },
   // Nomer 2
   {
@@ -22,7 +22,7 @@ const quiz = [
       "d. Singapura",
       "e. Bandung",
     ],
-    answer: 1,
+    answer: 2,
   },
   // Nomer 3
   {
@@ -34,7 +34,7 @@ const quiz = [
       "d. Membentuk Komisi Tiga Negara",
       "e. Memberikan perwakilannya saat terjadi Pepera",
     ],
-    answer: 5,
+    answer: 1,
   },
   // Nomer 4
   {
@@ -46,7 +46,7 @@ const quiz = [
       "d. Lusaka",
       "e. Algiers",
     ],
-    answer: 3,
+    answer: 2,
   },
   // Nomer 5
   {
@@ -58,7 +58,7 @@ const quiz = [
       "d. Keempat",
       "e. Kelima",
     ],
-    answer: 2,
+    answer: 0,
   },
   // Nomer 6
   {
@@ -70,7 +70,7 @@ const quiz = [
       "d. Keuangan",
       "e. Pertahanan Negara",
     ],
-    answer: 3,
+    answer: 2,
   },
   // Nomer 7
   {
@@ -82,7 +82,7 @@ const quiz = [
       "d. 2004",
       "e. 2000",
     ],
-    answer: 4,
+    answer: 1,
   },
   // Nomer 8
   {
@@ -94,7 +94,7 @@ const quiz = [
       "d. Internasional",
       "e. Intercontinental",
     ],
-    answer: 2,
+    answer: 1,
   },
   // Nomer 9
   {
@@ -106,7 +106,7 @@ const quiz = [
       "d. Berakhirnya era Kerajaan Hindu-Buddha, digantikan dengan era Kerajaan Islam",
       "e. Dikuasainya kerajaan-kerajaan di Jawa oleh Sriwijaya dari Sumatera",
     ],
-    answer: 3,
+    answer: 2,
   },
   // Nomer 10
   {
@@ -118,7 +118,7 @@ const quiz = [
       "d. Multatuli",
       "e. Moh. Yamin",
     ],
-    answer: 4,
+    answer: 3,
   },
   // Nomer 11
   {
@@ -130,7 +130,7 @@ const quiz = [
       "d. Cornelis de Houtman",
       "e. Lauren Ralph",
     ],
-    answer: 1,
+    answer: 0,
   },
   // Nomer 12
   {
@@ -142,7 +142,7 @@ const quiz = [
       "d. Agrarische Wet",
       "e. Landrent",
     ],
-    answer: 3,
+    answer: 2,
   },
   // Nomer 13
   {
@@ -154,7 +154,7 @@ const quiz = [
       "d. Ekspedisi yang dilakukan oleh Portugis ke seluruh bagian Indonesia",
       "e. Penundukan Sriwijaya",
     ],
-    answer: 1,
+    answer: 0,
   },
   // Nomer 14
   {
@@ -166,7 +166,7 @@ const quiz = [
       "d. Giyanti",
       "e. Konferensi Meja Bundar",
     ],
-    answer: 2,
+    answer: 1,
   },
   // Nomer 15
   {
@@ -190,7 +190,7 @@ const quiz = [
       "d. 3 Oktober 1947",
       "e. 5 Juli 1959",
     ],
-    answer: 1,
+    answer: 0,
   },
   // Nomer 17
   {
@@ -202,7 +202,7 @@ const quiz = [
       "d. Taman Nasional Komodo",
       "e. Hutan Tropis Sumatera",
     ],
-    answer: 2,
+    answer: 1,
   },
   // Nomer 18
   {
@@ -214,7 +214,7 @@ const quiz = [
       "d. Fasis",
       "e. Komunis",
     ],
-    answer: 5,
+    answer: 4,
   },
   // Nomer 19
   {
@@ -226,7 +226,7 @@ const quiz = [
       "d. Presiden tanpa batas masa jabatan",
       "e. Penyalahgunaan kekuasaan legislatif",
     ],
-    answer: 1,
+    answer: 0,
   },
   // Nomer 20
   {
@@ -238,7 +238,7 @@ const quiz = [
       "d. Demokrasi terpimpin",
       "e. Demokrasi liberal",
     ],
-    answer: 4,
+    answer: 2,
   },
   // Nomer 21
   {
@@ -250,7 +250,7 @@ const quiz = [
       "d. Tina Turner",
       "e. Aretha Franklin",
     ],
-    answer: 2,
+    answer: 1,
   },
   // Nomer 22
   {
@@ -262,7 +262,7 @@ const quiz = [
       "d. Penjualan hewan eksotis",
       "e. Konflik kekerasan di masyarakat",
     ],
-    answer: 3,
+    answer: 2,
   },
   // Nomer 23
   {
@@ -274,7 +274,7 @@ const quiz = [
       "d. UU 39/1999",
       "e. Perpol 8/2012",
     ],
-    answer: 4,
+    answer: 2,
   },
   // Nomer 24
   {
@@ -286,7 +286,7 @@ const quiz = [
       "d. Dayak",
       "e. Flores",
     ],
-    answer: 2,
+    answer: 1,
   },
   // Nomer 25
   {
